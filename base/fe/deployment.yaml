@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: timer-fe
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: timer-fe
+  template:
+    metadata:
+      labels:
+        app: timer-fe
+    spec:
+      containers:
+        - name: timer-fe
+          image: tsungmnli/timer-fe:latest
+          ports:
+            - containerPort: 80

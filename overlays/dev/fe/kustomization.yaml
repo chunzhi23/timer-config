@@ -1,0 +1,4 @@
+namespace: tsungmn
+resources:
+  - ../../base/fe
+  - ingress.yaml
