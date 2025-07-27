@@ -3,9 +3,13 @@ kind: Ingress
 metadata:
   name: timer-fe
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-clusterissuer"
 spec:
+  tls:
+    - hosts:
+        - sth.tsungmn.com
+      secretName: gitops-tls
   ingressClassName: nginx
   rules:
     - host: timer.tsungmn.com
