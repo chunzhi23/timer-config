@@ -6,4 +6,4 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
 - name: tsungmnli/timer-fe
-  newTag: f24ad4b0dffee81b1390c8f44cb11e575efd79a1
+  newTag: 8d735ee83e4f4e9ef762032493ec72d220b70888
