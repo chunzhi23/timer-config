@@ -1,19 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: timer-fe
+  name: fe-deployment
 spec:
-  replicas: 1
   selector:
     matchLabels:
-      app: timer-fe
+      app.kubernetes.io/name: fe
+  replicas: 1
   template:
     metadata:
       labels:
-        app: timer-fe
+        app.kubernetes.io/name: fe
     spec:
       containers:
-        - name: timer-fe
-          image: tsungmnli/timer-fe:latest
+        - image: tsungmnli/timer-fe
+          imagePullPolicy: Always
+          name: fe
           ports:
             - containerPort: 80

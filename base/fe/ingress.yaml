@@ -1,24 +1,23 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: timer-fe
+  name: fe-ingress
   annotations:
     kubernetes.io/ingress.class: "nginx"
     cert-manager.io/cluster-issuer: "letsencrypt-clusterissuer"
 spec:
   tls:
     - hosts:
-        - timer.tsungmn.com
+        - sth.tsungmn.com
       secretName: gitops-tls
-  ingressClassName: nginx
   rules:
-    - host: timer.tsungmn.com
+    - host: sth.tsungmn.com
       http:
         paths:
-          - path: /
-            pathType: Prefix
-            backend:
+          - backend:
               service:
-                name: timer-fe
+                name: fe-service
                 port:
                   number: 80
+            path: /
+            pathType: Prefix

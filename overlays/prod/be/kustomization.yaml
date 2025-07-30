@@ -1,0 +1,12 @@
+kind: Kustomization
+namespace: timer-prod
+resources:
+  - namespace.yaml
+  - secret.yaml
+  - ../../../base/be
+
+patches:
+  - path: domain.json
+    target:
+      kind: Ingress
+      name: be-ingress

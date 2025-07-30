@@ -1,0 +1,10 @@
+kind: Kustomization
+namespace: timer-prod
+resources:
+  - ../../../base/fe
+
+patches:
+  - path: domain.json
+    target:
+      kind: Ingress
+      name: fe-ingress

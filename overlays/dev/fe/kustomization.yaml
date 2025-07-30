@@ -1,9 +1,0 @@
-namespace: tsungmn
-resources:
-- ../../../base/fe
-- ingress.yaml
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-images:
-- name: tsungmnli/timer-fe
-  newTag: 8d735ee83e4f4e9ef762032493ec72d220b70888
