@@ -14,3 +14,5 @@ patches:
 images:
 - name: tsungmnli/timer-be
   newName: tsungmnli/timer-be-prod
+- name: tsungmnli/timer-be-prod
+  newTag: b05accfa4c28d481feb4fc32e5233b7fb9649a0b
