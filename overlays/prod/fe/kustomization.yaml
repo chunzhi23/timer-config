@@ -10,7 +10,5 @@ patches:
     kind: Ingress
     name: fe-ingress
 images:
-- name: tsungmnli/timer-fe
-  newTag: 742761d9ee337b2b3a5d07c49b6e672d661a6261
 - name: tsungmnli/timer-fe-prod
   newTag: 583cbc762fa359dbacea2912b29a0375f857d924
