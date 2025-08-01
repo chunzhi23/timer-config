@@ -16,4 +16,4 @@ images:
   newName: tsungmnli/timer-be-prod
   newTag: 080294cb2cc4f3a29665b7d95bcbf1d63d36db2f
 - name: tsungmnli/timer-be-prod
-  newTag: e9a1db5816c54136a7cae0fb68ec620f3dd86453
+  newTag: 185ddca5ee20f63a14c8af97362ace8a83409d8e
