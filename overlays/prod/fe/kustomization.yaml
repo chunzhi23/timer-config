@@ -14,4 +14,4 @@ images:
   newName: tsungmnli/timer-fe-prod
   newTag: 583cbc762fa359dbacea2912b29a0375f857d924
 - name: tsungmnli/timer-fe-prod
-  newTag: 86b1585420c2471bfca668809ea2cbf2224acf46
+  newTag: 6e49fe75b883357773e3fdf621579e078c37c709
